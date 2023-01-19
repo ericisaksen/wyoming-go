@@ -1,0 +1,27 @@
+{{ range $i, $b := .page.bio }}
+  <div class="pam-flex pam-section bio-section">
+    <div class="pam-medium-3 pam-columns headshot">
+      <img src="{{ file $b.headshot }}" alt="Photo of {{ $b.name }}">
+      {{ if $b.social }}
+        <ul class="bio-sm">
+          {{ range $s, $sm := $b.social }}
+            <li><a href="{{ $sm.link }}" class="{{ $sm.icon }}" target="_blank"><label>.</label></a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </div>
+    <div class="pam-medium-9 pam-columns">
+    <h2 class="partners-name">{{ $b.name }}</h2>
+    <h3>{{ $b.position }}</h3>
+    {{ $b.bio }}
+    {{ if $b.facts }}
+      {{ range $f, $fact := $b.facts }}
+        <div class="fact-container">
+          <h3>{{ $fact.title }}</h3>
+          <p>{{ $fact.content }}</p>
+        </div>
+      {{ end }}
+    {{ end }}
+    </div>
+  </div>
+{{ end }}

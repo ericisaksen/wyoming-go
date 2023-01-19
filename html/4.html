@@ -1,0 +1,71 @@
+---
+{
+  "title": "Calculators",
+  "calculators": [
+    {
+      "url": "https://www.newyorklife.com/resources/financial-calculators/life-insurance-proceeds-calculator",
+      "title": "Life Insurance",
+      "content": "How much Life Insurance do I need?"
+    },
+    {
+      "url": "https://www.newyorklife.com/learn-and-plan/retirement-savings-calculator",
+      "title": "Current Retirement Savings",
+      "content": "Are my current retirement savings sufficient?"
+    },
+    {
+      "url": "https://www.newyorklife.com/learn-and-plan/spending-habits-calculator",
+      "title": "Spending Habits",
+      "content": "How much am I spending?"
+    },
+    {
+      "url": "https://www.newyorklife.com/learn-and-plan/savings-in-retirement-calculator",
+      "title": "Savings in Retirement",
+      "content": "I'm retired, how long will my savings last?"
+    },
+    {
+      "url": "https://www.newyorklife.com/learn-and-plan/savings-goals-calculator",
+      "title": "Savings Goals",
+      "content": "How much should I save to reach my goal?"
+    },
+    {
+      "url": "https://www.newyorklife.com/learn-and-plan/risk-tolerance-calculator",
+      "title": "Risk Tolerance",
+      "content": "Do you know what yours is?"
+    },
+    {
+      "url": "https://www.newyorklife.com/learn-and-plan/retirement-401k-calculator",
+      "title": "Retirement Income and 401(k)",
+      "content": "How much retirement income might my 401(k) provide?"
+    },
+    {
+      "url": "https://www.newyorklife.com/learn-and-plan/retirement-living-expenses-calculator",
+      "title": "Retirement and Living Expenses",
+      "content": "How will retirement impact my living expenses?"
+    },
+    {
+      "url": "https://www.newyorklife.com/learn-and-plan/life-insurance-proceeds-calculator",
+      "title": "Life Insurance Proceeds",
+      "content": "How long will my current life insurance proceeds last?"
+    }
+  ]
+}
+---
+<div class="pam-section">
+  <div class="pam-top-quote">
+    <p>Only 41% of U.S. workers have tried to determine <br class="pam-show-for-large-up">how much they will need to save for a comfortable retirement.<br>
+    <span class="by-line">- Source: Employee Benefit Research Institute, 2017</span></p>
+  </div>
+  <p>How much retirement income will you need? How much life insurance is enough? What type of IRA is right for you?</p>
+  <p>Our financial calculators are designed as educational tools to help you estimate answers to common financial questions. They are not intended to predict future returns or results. Simply click on one of the general financial topics below and you'll find a selection of easy-to-use calculators about related financial topics.</p>
+  <p>These calculators are hypothetical examples used for illustrative purposes and do not represent the performance of any specific investment or product. Rates of return will vary over time, particularly for long-term investments. Investments offering the potential for higher rates of return also involve a higher degree of risk of loss. Actual results will vary.</p>
+</div>
+<div class="pam-section">
+  <ul class="pam-flex calculators">
+    {{ range $i, $c := .page.calculators }}
+      <li>
+        <a class="pam-button" href="{{ $c.url }}" target="_blank">{{ $c.title }}
+        <span class="calc-text">{{ $c.content }}</span></a>
+      </li>
+    {{ end }}
+  </ul>
+</div>

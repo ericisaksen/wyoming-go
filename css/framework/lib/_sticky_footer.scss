@@ -1,0 +1,14 @@
+.pam-sticky-wrapper {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+.pam-sticky-content {
+  display: table-row;
+  height: 100%;
+}
+.pam-sticky-footer {
+  display: table-row;
+  height: 1px;
+}

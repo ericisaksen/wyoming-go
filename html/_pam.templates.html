@@ -1,0 +1,93 @@
+<!-- BEGIN TEMPLATES -->
+<script data-pam-template-name="layout" type="application/x-pam-template">
+  <div class="pam-mobile-nav">
+    <ul>
+      <li><a class="pam-mobile-nav-close">Close</a></li>
+      <li><a href="index.cfm">Home</a></li>
+    </ul>
+    <%= render("nav") %>
+  </div>
+  <div class="pam-mobile-nav-toggle"><i class="lmg-fal lmg-fa-bars"></i></div>
+  <div class="pam-site-wrapper pam-sticky-wrapper">
+    <div class="pam-sticky-content">
+      <div class="pam-header animated slideInDown">
+        <div class="pam-container">
+          <div class="pam-flex jc ai">
+            <div class="pam-large-3 pam-medium-6 pam-columns valign-middle logo-left">
+              <% if(exists('.pam-page-index')) { %><h1><% } %>
+                <a href="index.cfm"><img src="{{ if .site.logo }}{{ file .site.logo }}{{ else }}//placehold.it/300x100?text=Insert Logo{{ end }}" {{ if .site.logo2 }}data-src="{{ file .site.logo2 }}"{{ end }} alt="{{ .site.title }}" /></a>
+              <% if(exists('.pam-page-index')) { %></h1><% } %>
+            </div>
+            <div class="pam-large-9 pam-medium-6 pam-columns valign-middle header-right">
+              <div class="pam-auto-nav pam-desktop-nav">
+                <%= render("nav") %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pam-page-content-container">
+        <% if (exists('.pam-page-interior')) { %>
+            <div class="title-container">
+              <div class="pam-container">
+                <% if (exists('#emerald-page-title')) { %>
+                  <h1 class="animated fadeInDown"><%= moveFrom('#emerald-page-title') %></h1>
+                <% } else if (exists('.pam-page-cfm .glossary')) { %>
+                  <h1 class="animated fadeInDown">Financial Glossary</h1>
+                <% } %>
+              </div>
+            </div>
+        <div class="pam-container pam-page-content">
+          <%= moveFrom("#emerald-page-content") %>
+        </div>
+      <% } else { %>
+      <%= moveFrom("#emerald-page-content") %>
+      <% } %>
+      </div>
+    </div>
+    <div class="pam-sticky-footer">
+      <div class="pam-sub-footer">
+        <div class="pam-container">
+          <div class="pam-flex pam-text-center ai jc">
+            <div class="pam-columns pam-large-order-1 pam-large-4 pam-medium-6">
+              <h2>Main Office</h2>
+              <p>{{ .site.address.address_line_1 }}<br/>
+                {{ if .site.address.address_line_2 }}{{ .site.address.address_line_2 }} <br/>{{ end }}
+                {{ .site.address.city }}, {{ .site.address.state}} {{ .site.address.zip }}</p>
+            </div>
+            <div class="pam-columns pam-large-order-3 pam-large-4 pam-medium-6">
+              <h2>Get in Touch</h2>
+              <p>Call: <a href="tel:{{ .site.phone }}">{{ .site.phone }}</a><br/>
+                Fax: {{ .site.fax }}</p>
+            </div>
+            <div class="pam-columns pam-large-order-2 pam-large-4 pam-medium-6">
+              <p><img src="{{ file "NYL-logo-color.png" }}" alt="{{ .site.title }}" /></p>
+              <!-- <p style="margin: 0"><a class="pam-button fb-button" href="" target="_blank"><i class="lmg-fab lmg-fa-facebook-f"></i> Connect on Facebook</a></p> -->
+              <div class="pam-footer">
+                <%= moveFrom("#emerald-page-footer") %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+<script data-pam-template-name="nav" type="application/x-pam-template">
+  <ul>
+    {{ range $i, $n := .site.nav }}
+      <li><a{{ if $n.url }} href="{{ $n.url }}" {{ end }}{{ if $n.blank }} target="_blank"{{ end}}>{{ $n.title }}</a>
+        {{ if $n.sub_nav }}
+        <div class="pam-sub-nav">
+          <ul>
+            {{ range $i2, $sn := $n.sub_nav }}
+              <li><a href="{{ $sn.url }}"{{ if $sn.blank }} target="_blank"{{ end}}>{{ $sn.title }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+</script>
+<!-- END TEMPLATES -->

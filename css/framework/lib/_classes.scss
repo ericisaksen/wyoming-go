@@ -1,0 +1,35 @@
+/* Classes for use with @extend */
+
+.pam-container {
+  margin: 0 auto;
+  max-width: $container-width;
+  position: relative;
+}
+
+.pam-icon {
+  display: inline-block;
+  font-family: PamAwesome, FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 32px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Clear float content  */
+.pam-clear {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.pam-clearfix {
+  &:after {
+    @extend .pam-clear;
+  }
+}
+
+/* Prevent FontAwesome icons from disappearing by inserting <label>description</label> tags */
+[class^="lmg-fa"] label,
+.pam-fa label,
+.fa label { display: none; }

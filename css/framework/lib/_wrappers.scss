@@ -1,0 +1,48 @@
+
+@mixin iframe-aspect($ext: "") {
+  &.pam-#{$ext}aspect-4-3 {
+    padding-bottom: 75%;
+  }
+  &.pam-#{$ext}aspect-16-9 {
+    padding-bottom: 56.25%;
+  }
+  &.pam-#{$ext}aspect-2-1 {
+    padding-bottom: 50%;
+  }
+  &.pam-#{$ext}aspect-1-1 {
+    padding-bottom: 100%;
+  }
+}
+.pam-video-wrapper,
+.pam-iframe-wrapper,
+.pam-map-wrapper {
+  padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+  iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  @include iframe-aspect();
+  @media #{$small-up} {
+    @include iframe-aspect("small-");
+  }
+  @media #{$medium-up} {
+    @include iframe-aspect("medium-");
+  }
+  @media #{$large-up} {
+    @include iframe-aspect("large-");
+  }
+  @media #{$xlarge-up} {
+    @include iframe-aspect("xlarge-");
+  }
+  @media #{$xxlarge-up} {
+    @include iframe-aspect("xxlarge-");
+  }
+}
+.pam-map-wrapper{
+  padding-bottom: 32%;
+}

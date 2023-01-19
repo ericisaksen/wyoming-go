@@ -1,0 +1,425 @@
+{
+	"Title": "New York Life Wyoming",
+	"Name": "wyoming-go",
+	"Password": "1b8e5133",
+	"Emerald": {},
+	"Globals": {
+		"dba": "New York Life Wyoming",
+		"address": {
+			"address_line_1": "111 West 2nd Street, Third Floor",
+			"address_line_2": "",
+			"city": "Casper",
+			"state": "WY",
+			"zip": "82601"
+		},
+		"phone": "307.266.1485",
+		"social": [
+			{
+				"icon": "facebook-f",
+				"link": "https://www.facebook.com/NewYorkLifeSouthFlorida/"
+			}
+		],
+		"state": "Wyoming",
+		"email": "mrude@newyorklife.com",
+		"fax": "307.266.2017",
+		"logo": "wyoming-logo-1.png",
+		"logo2": "wyoming-logo-2.png",
+		"nav": [
+			{
+				"sub_nav": [
+					{
+						"title": "Our History",
+						"url": ".6.htm"
+					},
+					{
+						"title": "Managing Partner",
+						"url": ".1.htm"
+					},
+					{
+						"title": "Our Professionals",
+						"url": ".12.htm"
+					},
+					{
+						"title": "About NYL",
+						"url": ".7.htm"
+					},
+					{
+						"title": "Cultural Markets",
+						"url": ".8.htm"
+					}
+				],
+				"title": "About"
+			},
+			{
+				"sub_nav": [
+					{
+						"title": "Individual/Family Services",
+						"url": ".3.htm"
+					},
+					{
+						"title": "Business Services",
+						"url": ".2.htm"
+					},
+					{
+						"title": "Our Products",
+						"url": ".5.htm"
+					}
+				],
+				"title": "Services"
+			},
+			{
+				"sub_nav": [
+					{
+						"title": "Why NYL?",
+						"url": ".10.htm"
+					},
+					{
+						"title": "Agent Benefits",
+						"url": ".14.htm"
+					},
+					{
+						"title": "Training and Support",
+						"url": ".15.htm"
+					},
+					{
+						"title": "Current Opportunities",
+						"url": ".16.htm"
+					},
+					{
+						"title": "Application Inquiry",
+						"url": ".11.htm"
+					}
+				],
+				"title": "Careers"
+			},
+			{
+				"sub_nav": [
+					{
+						"title": "Calculators",
+						"url": ".4.htm"
+					},
+					{
+						"title": "Financial Glossary",
+						"url": "glossary.cfm"
+					},
+					{
+						"title": "Video Library",
+						"url": ".9.htm"
+					}
+				],
+				"title": "Resources"
+			},
+			{
+				"title": "Contact",
+				"url": ".13.htm"
+			}
+		],
+		"partners": [
+			{
+				"page": ".17.htm",
+				"bio": "<p>Robbie is a life insurance and financial professional with New York Life. His focus is on retirement planning both tax-free and tax differed, 401 (K) rollovers and employee benefits. He has been with New York Life for 19 years and in the insurance industry for 24 years.</p><p>He is currently a Political Involvement Leader working with New York Life&rsquo;s Department of Political Affairs in helping both our political leaders and our locals stay abreast of current affairs in the Insurance and Financial sector.</p><p>Robbie is a graduate of Idaho State University where he played college golf and graduated with a degree in Business Administration and Marketing degree.</p><p>After college, he moved to Salt Lake City, Utah where he began his insurance carrier. He moved back to his hometown of Green River in 2005.</p><p>Robbie met his wife Carla while attending Idaho State University. They have 3 kids Lauren 19, Christian 16 and Colin 12. They currently reside in Green River, WY and Robbie offices in Rock Springs, WY.</p>",
+				"email": "crlee@ft.newyorklife.com",
+				"headshot": "robbie-headshot.jpg",
+				"name": "Charles &ldquo;Robbie&rdquo; Lee",
+				"phone": "(307) 362-4043",
+				"position": "RR/Agent",
+				"facts": [
+					{
+						"title": "The Best Part of the Day",
+						"content": "Dinner time."
+					},
+					{
+						"title": "One Thing I Can't Live Without",
+						"content": "My family."
+					},
+					{
+						"title": "All Time Favorite Food",
+						"content": "Steak"
+					}
+				]
+			},
+			{
+				"page": ".18.htm",
+				"bio": "<p>Madison Robidart is a dedicated financial professional who believes in integrity and giving through service above all else. One of her favorite things about her practice is that she has the ability to share her knowledge with anyone she chooses without any barriers. She is a big believer that everyone should have the kind of financial literacy that sets them, and their families up for success.</p><p>She grew up in a small mountain town where she started working while still in middle school in family owned businesses. She worked in businesses in hospitality, food, franchise, healthcare and more dedicating herself to learning as much as she could from each and every field and business owner. With this knowledge and experience, she truly understands what family-owned business owners priorities and goals are..</p><p>She is an avid volunteer, dedicated to giving back to her community in any way she can. In 2022 she logged 61 volunteer hours for The Salvation Army and participated in countless other local volunteer and fundraising activities. She hosts a local group for moms who are entrepreneurs called \"Momtrepreneurs\" that is focused on Gratitude, Growth, and Giving.</p><p>In her free time Madison loves to paint with her daughter and play Volleyball with her husband. She loves practicing Pilates, listening to audio-books, and spending quality time with her friends and family (especially over a card game). She loves animals, athletics, and spending time on the water.</p>",
+				"email": "mrobidart@ft.newyorklife.com",
+				"headshot": "madison-headshot.jpg",
+				"name": "Madison H. Robidart",
+				"phone": "(307) 670-3300",
+				"position": "Financial Professional",
+				"social": [
+					{
+						"website": "https://www.newyorklife.com/agent/mrobidart",
+						"icon": "lmg-fas lmg-fa-globe"
+					},
+					{
+						"linkedin": "https://www.linkedin.com/in/madison-robidart",
+						"icon": "lmg-fab lmg-fa-linkedin-in"
+					},
+					{
+						"facebook": "https://www.facebook.com/mrobifinance/",
+						"icon": "lmg-fab lmg-fa-facebook-f"
+					}
+				],
+				"facts": [
+					{
+						"title": "The Best Part of the Day",
+						"content": "Picking my daughter up from daycare."
+					},
+					{
+						"title": "One Thing I Can't Live Without",
+						"content": "My family... and my Nespresso Machine... but mostly family."
+					},
+					{
+						"title": "All Time Favorite Food",
+						"content": "Green Chile"
+					}
+				]
+			},
+			{
+				"page": ".19.htm",
+				"bio": "<p>I offer a variety of products that can help you meet a number of insurance and financial needs, including, but not limited to college funding, retirement, managing costs for extended periods of care and lifetime income strategies. Please contact me to help you fully analyze your needs and recommend appropriate solutions. I am an Agent licensed to sell insurance through New York Life Insurance Company and may be licensed with various other independent unaffiliated insurance companies. Additionally, I am a Registered Representative of and offer securities products &amp; services through NYLIFE Securities LLC, (Member FINRA/SIPC), A Licensed Insurance Agency. Any testimonial on this site is based on an individual&rsquo;s experience and may not be representative of the experience of other customers. These testimonials are no guarantee of future performance or success.</p><p>I worked to the USAF for 7 years as a civilian. I have 14 years experience working in the counseling field. I graduated with a MS in Counseling from South Dakota State University. I graduated with a BS from Black Hills State University.</p><p>I've been married to Tina for 20+ years. We have twin boys, now young men. Both are college athletes.</p>",
+				"dba": "Chick Financial",
+				"email": "dachick@ft.newyorklife.com",
+				"headshot": "david-headshot.jpg",
+				"name": "David A. Chick",
+				"phone": "(307) 629-0848",
+				"position": "Financial Services Professional",
+				"social": [
+					{
+						"link": "http://www.chickfinancial.com",
+						"icon": "lmg-fas lmg-fa-globe"
+					}
+				],
+				"facts": [
+					{
+						"title": "The Best Part of the Day",
+						"content": "Seeing my wife!"
+					},
+					{
+						"title": "One Thing I Can't Live Without",
+						"content": "Seeing my wife!"
+					},
+					{
+						"title": "All Time Favorite Food",
+						"content": "Cajun"
+					}
+				]
+			},
+			{
+				"page": ".20.htm",
+				"bio": "<p>Hello, my name is Cindy Zastoupil and I am an insurance agent with New York Life Insurance Co. I am passionate about helping you set up your financial future so that you can sleep better at night knowing your family will be taken care of if the worst happens.</p><p>I've worked for New York Life for a year, but have about five years past experience in insurance. My education is in the area of special education as I was a teacher for twelve years before embarking on a new career with New York Life shortly after losing my first husband at an early age.</p><p>I am newly married for the second time after losing my first husband suddenly four years ago. I live in the beautiful Black Hills of South Dakota where my closest neighbors are the deer. I love to fish, explore, travel and raise English Cream Golden Retrievers.</p>",
+				"email": "clzastoupil@ft.newyorklife.com",
+				"headshot": "cindy-headshot.jpg",
+				"name": "Cindy Zastoupil",
+				"phone": "(605) 517-1715",
+				"position": "Insurance Agent",
+				"social": [
+					{
+						"linkedin": "http://www.linkedin.com/in/cindyzastoupil",
+						"icon": "lmg-fab lmg-fa-linkedin-in"
+					},
+					{
+						"facebook": "https://www.facebook.com/cindyznyl",
+						"icon": "lmg-fab lmg-fa-facebook-f"
+					}
+				],
+				"facts": [
+					{
+						"title": "The Best Part of the Day",
+						"content": "Is waking up in the morning to my beautiful English Cream Golden Retrievers."
+					},
+					{
+						"title": "One Thing I Can't Live Without",
+						"content": "Sunshine"
+					},
+					{
+						"title": "All Time Favorite Food",
+						"content": "Mexican Food"
+					}
+				]
+			},
+			{
+				"page": ".21.htm",
+				"bio": "<p>26 plus years in insurance industry.</p><p>Love to go camping and boating, love to cook and bake and spend time with family.</p>",
+				"email": "slsoehren@ft.newyorklife.com",
+				"headshot": "susan-headshot.jpg",
+				"name": "Susan Soehren",
+				"phone": "(605) 341-4701",
+				"position": "Agent"
+			},
+			{
+				"page": ".22.htm",
+				"bio": "<p>As a New York Life Agent, I sincerely believe that most people want to do what's right: right for themselves, right for their families, and right for their communities. In fact, that's one of the reasons I joined the company July 2022. After nine years working education field, I wanted the opportunity to work somewhere that made it easy for other people to do what was right, and more importantly, made it easy for me to do right by them.</p><p>You can take comfort in the fact that I have been a proud resident of South Dakota for most my life, and therefore have a vested interest in seeing my friends and neighbors succeed. As a loving husband and father of one daughter, I have many of the same hopes and aspirations as my clients and am happy to share with you all the resources and information New York Life has to offer.</p><p>Depending on your needs, I can introduce you to some ways to help protect your family's lifestyle and future; or prepare for major financial events such as paying for college, saving for retirement, or caring for an aging relative. If you're wondering about my qualifications, you might find it reassuring to know that I am a licensed agent to sell insurance through New York Life Insurance Company. In addition to my experience, I have a Masters from Fort Hays State University in Educational Administration and am currently working on getting designations such as CFP.</p>",
+				"email": "djchristense@ft.newyorklife.com",
+				"headshot": "dustin-headshot.jpg",
+				"name": "Dustin Christensen, MS",
+				"phone": "(605) 341-4701",
+				"position": "Agent",
+				"social": [
+					{
+						"link": "http://www.djchristense.com",
+						"icon": "lmg-fas lmg-fa-globe"
+					},
+					{
+						"linkedin": "http://www.linkedin.com/in/dustin-christensen-936810b0",
+						"icon": "lmg-fab lmg-fa-linkedin-in"
+					},
+					{
+						"facebook": "https://www.facebook.com/DustinJChristensenNYL?mibextid=ZbWKwL",
+						"icon": "lmg-fab lmg-fa-facebook-f"
+					}
+				],
+				"facts": [
+					{
+						"title": "The Best Part of the Day",
+						"content": "When I get to see my kids."
+					},
+					{
+						"title": "One Thing I Can't Live Without",
+						"content": "Animals"
+					},
+					{
+						"title": "All Time Favorite Food",
+						"content": "Vegetarian pizza"
+					}
+				]
+			},
+			{
+				"page": ".23.htm",
+				"bio": "<p>Help families, professionals and business owners to get their ideal coverage that would protect them and their family if their ability of generating income gets jeopardized. Income diversification, helping individuals to diversify their portfolio through safe products that would allow them to have better income at retirement. I work with individuals and families from around the world providing financial education and income protection.</p><p>I have an Associate degree in Administrative services and a bachelors degree in Public Finances with a mayor in income taxes, since moving to the States I started career as a parent educator/social worker and eventually switch back to finances since starting with New York Life.</p><p>Blended family of five, two boys (Thomas and Zachary) and a girl (Esabell)<br/> Love baseball, long walks, hiking, concerts and traveling.<br/> Favorite book: Harry Potter<br/> Favorite sports team: Detroit Tigers/ Houston Astros (Baseball)<br/> France/Brasil (Soccer)</p>",
+				"email": "lmaria@ft.newyorklife.com",
+				"headshot": "mary-headshot.jpg",
+				"name": "Mary Longart-Parkinson",
+				"phone": "(307) 797-1615",
+				"position": "Agent",
+				"social": [
+					{
+						"link": "http://www.mlongart.com",
+						"icon": "lmg-fas lmg-fa-globe"
+					},
+					{
+						"linkedin": "https://www.linkedin.com/in/mary-longart-parkinson-00b1a377/",
+						"icon": "lmg-fab lmg-fa-linkedin-in"
+					},
+					{
+						"facebook": "https://www.facebook.com/mlongartnyl/",
+						"icon": "lmg-fab lmg-fa-facebook-f"
+					}
+				],
+				"facts": [
+					{
+						"title": "The Best Part of the Day",
+						"content": "When I get to see my kids."
+					},
+					{
+						"title": "One Thing I Can't Live Without",
+						"content": "Animals"
+					},
+					{
+						"title": "All Time Favorite Food",
+						"content": "Vegetarian pizza"
+					}
+				]
+			},
+			{
+				"page": ".24.htm",
+				"bio": "<p>Help families, professionals and business owners to get their ideal coverage that would protect them and their family if their ability of generating income gets jeopardized. Income diversification, helping individuals to diversify their portfolio through safe products that would allow them to have better income at retirement. I work with individuals and families from around the world providing financial education and income protection.</p><p>I have an Associate degree in Administrative services and a bachelors degree in Public Finances with a mayor in income taxes, since moving to the States I started career as a parent educator/social worker and eventually switch back to finances since starting with New York Life.</p><p>Blended family of five, two boys (Thomas and Zachary) and a girl (Esabell)<br/> Love baseball, long walks, hiking, concerts and traveling.<br/> Favorite book: Harry Potter<br/> Favorite sports team: Detroit Tigers/ Houston Astros (Baseball)<br/> France/Brasil (Soccer)</p>",
+				"email": "Kellifritz@ft.newyorklife.com",
+				"headshot": "kristen-headshot.jpg",
+				"name": "Kristen Ellifritz, MBA",
+				"phone": "(307) 702-2102",
+				"position": "Financial Advisor",
+				"social": [
+					{
+						"linkedin": "https://www.linkedin.com/in/kristen-ellifritz-mba-30630b30/",
+						"icon": "lmg-fab lmg-fa-linkedin-in"
+					},
+					{
+						"facebook": "https://www.facebook.com/KristenEllifritzMBA",
+						"icon": "lmg-fab lmg-fa-facebook-f"
+					}
+				],
+				"facts": [
+					{
+						"title": "The Best Part of the Day",
+						"content": "As a former college athlete, I love to watch my 3 kids compete in their own sporting events!"
+					},
+					{
+						"title": "One Thing I Can't Live Without",
+						"content": "Living in Wyoming, I love the abundance of outdoor activities I have right outside of my doorstep! Hiking, hunting, fly fishing and cycling to name a few"
+					},
+					{
+						"title": "All Time Favorite Food",
+						"content": "Give me PIZZA anytime, any day!"
+					}
+				]
+			},
+			{
+				"page": ".25.htm",
+				"bio": "<p>Tammy joined the Financial Benefits team in 1996 after more than a decade working in accounting throughout western South Dakota. From the start, Tammy brought an added depth of experience and insights that years of accounting in large and small businesses creates.</p><p>Her initial focus was to help streamline the internal operations of Financial Benefits, but her long-term goal was to become a partner. In 2005, her goal became a reality when she became a full Partner at the firm and in 2021 took over full ownership and operations of Financial Benefits.</p><p>Tammy spends her time working directly with clients to accomplish business, estate, and retirement planning goals while also keeping a close eye on the operations of the business. When you meet Tammy, you&rsquo;ll know why she&rsquo;s been so successful at helping clients achieve their desired level of financial security. Her contagious smile, desire to understand and serving heart truly set her apart.</p><p>A few other things about Tammy...</p><ul><li>Member of NAIFA</li><li>Earned the Chartered Financial Consultant (ChFC&reg;) designation from the American College</li><li>Member of The Nautilus Group&reg; &ndash; Advance Business and Estate Planning Specialists</li><li>Member of The Legacy Wealth Coach Network</li><li>Member of NAIFA &amp; MDRT Top of the Table</li><li>Serves on the Black Hills State University Foundation Board and Finance Committee</li><li>Serves on the Deadwood History Board of Directors</li></ul>",
+				"email": "tjburke@financial-benefits.com",
+				"headshot": "tammy-headshot.jpg",
+				"name": "Tamara Burke, ChFC",
+				"phone": "(605) 642-7747",
+				"position": "Registered Representative",
+				"social": [
+					{
+						"link": "http://www.financial-benefits.com/",
+						"icon": "lmg-fas lmg-fa-globe"
+					},
+					{
+						"linkedin": "http://www.linkedin.com/in/tamaraburkefbi",
+						"icon": "lmg-fab lmg-fa-linkedin-in"
+					},
+					{
+						"facebook": "https://www.facebook.com/FinancialBenefitsSpearfish",
+						"icon": "lmg-fab lmg-fa-facebook-f"
+					}
+				],
+				"facts": [
+					{
+						"title": "The Best Part of the Day",
+						"content": "When Emma (my Jack Russell Terrier) greets me at the door."
+					},
+					{
+						"title": "One Thing I Can't Live Without",
+						"content": "Getting fresh air daily."
+					},
+					{
+						"title": "All Time Favorite Food",
+						"content": "Brussel sprouts with goat cheese."
+					}
+				]
+			},
+			{
+				"page": ".26.htm",
+				"bio": "<p>Zach joined the Financial Benefits team after graduating from Black Hills State University in 2010. He served in a multitude of roles until joining the firm as a fulltime associate advisor in 2016.</p><p>He specializes in working primarily with families and established clients in creating and implementing their financial plans, in addition to working alongside Tamara Burke in developing and implementing business and estate strategies.</p>",
+				"email": "zacharyburke@financial-benefits.com",
+				"headshot": "zach-headshot.jpg",
+				"name": "Zachary Burke",
+				"phone": "(605) 642-7747",
+				"position": "Registered Representative",
+				"social": [
+					{
+						"link": "http://www.financial-benefits.com/",
+						"icon": "lmg-fas lmg-fa-globe"
+					}
+				],
+				"facts": [
+					{
+						"title": "The Best Part of the Day",
+						"content": "Early morning when all is still quiet."
+					},
+					{
+						"title": "One Thing I Can't Live Without",
+						"content": "Watching my children do what makes them happy."
+					},
+					{
+						"title": "All Time Favorite Food",
+						"content": "A good lasagna sounds about right."
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,42 @@
+---
+{
+  "title": "Business Services",
+  "services": [
+    {
+      "title": "Executive Benefits",
+      "content": "<p>The success of most businesses is tied in to the talent, passion and work ethics of their key executives. Executive benefit packages can help attract, motivate, and retain high-caliber employees and keep a company healthy and stable. Our agents can help businesses fund nonqualified plans, supplemental employee retirement plans, split-dollar plans, and more.</p>"
+    },
+    {
+      "title": "Employee Benefits",
+      "content": "<p>Selecting the right benefit package is becoming increasingly important in retaining the best employees and keeping them productive. Our agents strive to know and understand the complete financial situation of each business and to provide them with high quality products and services to help them reach their goals. Our clients can rest assured knowing that our agents have their interests at heart.</p><p>Focusing on the objectives, budget, and culture of each business, our agents work with businesses to custom design funding options for their group benefits, qualified retirement plans, and voluntary benefits plans, in order to address their employees’ unique needs.</p>"
+    },
+    {
+      "title": "Succession Planning",
+      "content": "<p>Succession planning allows owners to retire from their business within their own time frame while preparing for the company to be transferred to family members, key employees, an outside party, or even a charity. This must be done in a way that helps to achieve personal financial security, maintains harmony, and achieves maximum value for the business. Our agents provide financial strategies for succession planning.</p>"
+    },
+    {
+      "title": "Key Person Insurance",
+      "content": "<p>Key person life insurance offers a death benefit that helps indemnify an employer for the loss of one of its most important assets—the key person. This can help assure continuity of the business for employees, customers, and creditors, and protects against losses in sales, momentum, and credit. It can also be used to help recruit and develop a replacement for the employee.</p>"
+    },
+    {
+      "title": "Funding Buy-Sell Agreements",
+      "content": "<p>A buy-sell agreement is a legally binding agreement between co-owners of a business that governs the situation if a co-owner dies or leaves the business, whether by force or by choice. A funded cross-purchase buy-sell plan utilizes life insurance to help ensure that the arrangement is properly funded so that there will be money if the event occurs. </p>"
+    },
+    {
+      "title": "Funding Deferred Compensation",
+      "content": "<p>Deferred compensation is a written agreement between an employer and an employee in which the employee chooses to have part of his or her compensation withheld by the company, invested on their behalf, and distributed to them at a predetermined point in the future. Deferred compensation can be used as a flexible way to attract and incentivize key employees. Our agents provide funding strategies for deferred compensation. </p>"
+    }
+  ]
+}
+---
+<div class="pam-section">
+  <p>Our agents at {{ if .site.dba }}{{ .site.dba }}{{ else }}<span style="color: red">[[GENERAL OFFICE]]</span>{{ end }} offer a wide array of services to help business owners address their financial needs at every stage of the business life cycle. Taking into account their personal values and financial goals, they create and execute customized strategies to help entrepreneurs meet their objectives. Some of our key services are detailed below.</p>
+</div>
+<div data-expander=".pam-section" data-expander-title="h2">
+  {{ range $i, $s := .page.services }}
+    <div class="pam-section">
+      <h2>{{ $s.title }}</h2>
+      {{ $s.content }}
+    </div>
+  {{ end }}
+</div>

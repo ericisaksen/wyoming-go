@@ -1,0 +1,64 @@
+.pam-expander-title {
+  cursor: pointer;
+  position: relative;
+}
+
+.pam-expander-content {
+  display: none;
+}
+.pam-expander > .pam-expander-title{
+  color: $primary;
+  padding-right: 40px;
+}
+.pam-expander > .pam-expander-title:after {
+  @extend .pam-icon;
+  content: "\f107";
+  position: absolute;
+  top: 50%;
+  @include transform(translateY(-50%));
+  right: 0.5em;
+  background: $primary;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: .75em;
+  width: 20px;
+  height: 20px;
+  @media #{$large-up}{
+    font-size: 1em;
+    width: 30px;
+    height: 30px;
+  }
+}
+.icons-services{
+  > .pam-columns{
+    width: calc(50% - 1em);
+    margin: .5em;
+    padding: 0;
+    .pam-expander-content{
+      padding: 1em 2em;
+    }
+  }
+  .pam-expander > h2.pam-expander-title{
+    font-size: 1.5em;
+    i{
+      margin-right: 20px;
+      background: $secondary;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+.pam-expander.active > .pam-expander-title{
+  color: $secondary;
+}
+.pam-expander.active > .pam-expander-title:after {
+  content: "\f106";
+  background: $secondary;
+}

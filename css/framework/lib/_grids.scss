@@ -1,0 +1,151 @@
+/* Responsive rows and columns */
+.pam-row {
+  @extend .pam-clearfix;
+}
+.pam-grid {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.pam-grid-row {
+  display: table-row;
+}
+@media #{$medium-up}{
+  .pam-flex{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &.je{
+      justify-content: flex-end;
+    }
+    &.jc{
+      justify-content: center;
+    }
+    &.sb{
+      justify-content: space-between;
+    }
+    &.sa{
+      justify-content: space-around;
+    }
+    &.ai{
+      align-items: center;
+    }
+    &.ae{
+      align-items: flex-end;
+    }
+    > .pam-columns{
+      float: none !important;
+    }
+  }
+}
+  ul.pam-flex{
+    list-style: none;
+    justify-content: center;
+    li{
+      margin: 0 10px;
+    }
+  }
+
+.pam-column,
+.pam-columns {
+  padding: 0 1.25%;
+  width: 100%;
+  &.pam-collapse {
+    padding: 0;
+  }
+}
+
+@mixin make-columns($size) {
+  .pam-#{$size}-12 { width: 100%; }
+  .pam-#{$size}-11 { width: 91.66%; }
+  .pam-#{$size}-10 { width: 83.33%; }
+  .pam-#{$size}-9 { width: 75%; }
+  .pam-#{$size}-8 { width: 66.66%; }
+  .pam-#{$size}-7 { width: 58.33%; }
+  .pam-#{$size}-6 { width: 50%; }
+  .pam-#{$size}-5 { width: 41.66%; }
+  .pam-#{$size}-4 { width: 33.33%; }
+  .pam-#{$size}-3 { width: 25%; }
+  .pam-#{$size}-2 { width: 16.66%; }
+  .pam-#{$size}-1 { width: 8.33%; }
+  [class*=pam-#{$size}-].pam-columns {
+    .pam-flex &{
+      float: none;
+    }
+    float: left;
+  }
+  .pam-#{$size}-pull-11{ position: relative; left: -91.66667%;  }
+  .pam-#{$size}-pull-10{ position: relative; left: -83.33333%;  }
+  .pam-#{$size}-pull-9{ position: relative; left: -75%;  }
+  .pam-#{$size}-pull-8{ position: relative; left: -66.66667%;  }
+  .pam-#{$size}-pull-7{ position: relative; left: -58.33333%;  }
+  .pam-#{$size}-pull-6{ position: relative; left: -50%;  }
+  .pam-#{$size}-pull-5{ position: relative; left: -41.66667%;  }
+  .pam-#{$size}-pull-4{ position: relative; left: -33.33333%;  }
+  .pam-#{$size}-pull-3{ position: relative; left: -25%;  }
+  .pam-#{$size}-pull-2{ position: relative; left: -16.66667%;  }
+  .pam-#{$size}-pull-1{ position: relative; left: -8.33333%;  }
+
+  .pam-#{$size}-push-11{ position: relative; left: 91.66667%;  }
+  .pam-#{$size}-push-10{ position: relative; left: 83.33333%;  }
+  .pam-#{$size}-push-9{ position: relative; left: 75%;  }
+  .pam-#{$size}-push-8{ position: relative; left: 66.66667%;  }
+  .pam-#{$size}-push-7{ position: relative; left: 58.33333%;  }
+  .pam-#{$size}-push-6{ position: relative; left: 50%;  }
+  .pam-#{$size}-push-5{ position: relative; left: 41.66667%;  }
+  .pam-#{$size}-push-4{ position: relative; left: 33.33333%;  }
+  .pam-#{$size}-push-3{ position: relative; left: 25%;  }
+  .pam-#{$size}-push-2{ position: relative; left: 16.66667%;  }
+  .pam-#{$size}-push-1{ position: relative; left: 8.33333%;  }
+
+  .pam-#{$size}-offset-11{ margin-left: 91.66667%;  }
+  .pam-#{$size}-offset-10{ margin-left: 83.33333%;  }
+  .pam-#{$size}-offset-9{ margin-left: 75%;  }
+  .pam-#{$size}-offset-8{ margin-left: 66.66667%;  }
+  .pam-#{$size}-offset-7{ margin-left: 58.33333%;  }
+  .pam-#{$size}-offset-6{ margin-left: 50%;  }
+  .pam-#{$size}-offset-5{ margin-left: 41.66667%;  }
+  .pam-#{$size}-offset-4{ margin-left: 33.33333%;  }
+  .pam-#{$size}-offset-3{ margin-left: 25%;  }
+  .pam-#{$size}-offset-2{ margin-left: 16.66667%;  }
+  .pam-#{$size}-offset-1{ margin-left: 8.33333%;  }
+
+  .pam-#{$size}-order-11{ order: 11}
+  .pam-#{$size}-order-10{ order: 10}
+  .pam-#{$size}-order-9{order: 9 }
+  .pam-#{$size}-order-8{ order: 8}
+  .pam-#{$size}-order-7{ order: 7}
+  .pam-#{$size}-order-6{ order: 6}
+  .pam-#{$size}-order-5{order: 5}
+  .pam-#{$size}-order-4{ order: 4}
+  .pam-#{$size}-order-3{ order: 3}
+  .pam-#{$size}-order-2{order: 2}
+  .pam-#{$size}-order-1{order: 1}
+
+  [class*=pam-#{$size}-].pam-cell {
+    display: table-cell;
+    vertical-align: top;
+  }
+}
+
+@include make-columns('span');
+
+@media #{$small-up} {
+  @include make-columns('small');
+}
+@media #{$medium-up} {
+  @include make-columns('medium');
+}
+@media #{$large-up} {
+  @include make-columns('large');
+}
+@media #{$xlarge-up} {
+  @include make-columns('xlarge');
+}
+@media #{$xxlarge-up} {
+  @include make-columns('xxlarge');
+}

@@ -1,0 +1,91 @@
+---
+{
+  "title": "Our Products",
+  "services": [
+    {
+      "title": "Life Insurance",
+      "content": "<p>Many people think that life insurance is only for people with families. While it’s true that life insurance can help provide for the needs of dependents, life insurance also can be an important part of a well-thought-out estate, business succession, or charitable giving plan. And permanent life insurance offers living benefits as well, such as tax-deferred cash value accumulation. For all of these reasons, life insurance can be important for someone starting out—or for someone who’s starting over.</p>",
+      "sub": [
+        {
+          "title": "Whole Life",
+          "content": "<p>Whole life insurance is also known as permanent insurance. Clients receive coverage for their entire life, as long as premiums (which are a set amount per period) are paid. Whole life policies accumulate cash value tax-deferred.</p>"
+        },
+        {
+          "title": "Term Life",
+          "content": "<p>Term life policies provide coverage for a specific amount of time—such as five years, 10 years, or 20 years. Term premiums are often less expensive than whole life premiums, but once the term of the policy is complete, coverage terminates. There is no accumulation of cash value.</p>"
+        },
+        {
+          "title": "Universal Life",
+          "content": "<p>Universal Life insurance is designed to offer customizable death benefit protection with non-guaranteed planned premiums and a non-guaranteed death benefit. Depending on the product selected and the amount of premium you pay, Universal Life insurance can allow you to keep your coverage as long as you need: to age 80, 90, 100 or longer. Because of the policy’s flexible and non-guaranteed nature, it is important to fund your policy properly and actively manage your policy to reflect changes in interest crediting rates and policy charges over the duration of your policy. </p><p class=\"pam-footnote\">This policy will terminate if at any time the cash surrender value is insufficient to pay the monthly deductions. This can happen due to insufficient premium payments, if loans or withdrawals are made, or if current interest rates or charges fluctuate.</p>"
+        },
+        {
+          "title": "Survivorship Life",
+          "content": "<p>Survivorship life insurance—available as whole life, universal life, or variable universal life—covers two people and provides payment of the proceeds when the second insured individual dies. Survivorship life insurance is often used to help meet estate planning or business continuation goals. Variable universal life is only offered by properly licensed Registered Representative of NYLIFE Securities LLC.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Annuities",
+      "content": "<p>An annuity is a unique financial vehicle designed to help clients accumulate money for their retirement and/or turn a lump sum of money into a guaranteed stream of income payments. Deferred annuities offer the advantage of tax-deferral and can be used to accumulate money for retirement. Income annuities are used to generate a stream of income payments that are guaranteed to last for as long clients need them to—even for the rest of their life.<sup>#</sup> Some of the different types of annuities are:</p>",
+      "sub": [
+        {
+          "title": "Fixed Deferred Annuities",
+          "content": "<p>With a fixed deferred annuity, the interest rate on your policy is guaranteed never to fall below a certain amount.<sup>*</sup> For many people, this provides a measure of security.</p><p>(A fixed deferred annuity is subject to a sales charge for early withdrawals, which may be subject to income tax. Withdrawals prior to age 59½ are subject to a 10% tax penalty.)</p><p class=\"pam-footnote\"><sup>*</sup>A fixed deferred annuity is subject to a sales charge for early withdrawals, which may be subject to income tax. Withdrawals prior to age 59½ are subject to a 10% tax penalty.</p>"
+        },
+        {
+          "title": "Lifetime Income Annuities",
+          "content": "<p>A lifetime income annuity is an annuity in which income payments begin one period after the annuity is purchased. It is designed to provide clients with predictable income monthly, quarterly, semiannually, or annually, no matter how long they live, and regardless of how the financial markets perform.</p><p class=\"pam-footnote\">All guarantees associated with annuity contracts are based on the claims-paying ability of the issuing insurance company. Withdrawals may be subject to regular income tax, and if made prior to age 59½, may be subject to a 10% IRS penalty. In addition, surrender charges may apply.</p>"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "title": "Disability and Extended Care Needs",
+      "content": "<p>To execute a sound retirement strategy, asset and income protection are a must. Designing a plan that encompasses managing costs for extended periods of care and disability insurance can help create the necessary balance in a portfolio to ensure stability and protection of assets. </p><p class=\"pam-footnote\">Individual disability products available through one or more carriers not affiliated with New York Life Insurance Company, dependent on carrier authorization and product availability in your state or locality.</p>"
+    },
+    {
+      "title": "Retirement Income",
+      "content": "<p>Preparing for retirement is easier with the help of our guaranteed<sup>#</sup> lifetime income annuity products. Clients can select an immediate annuity that pays income right away, or a tax-deferred fixed annuity that allows them to set aside money until they need it. Either way, clients will be assured a steady, dependable source of income for life.</p>"
+    },
+    {
+      "title": "Investments<sup>~</sup>",
+      "content": "<p>We offer comprehensive products and services to help clients develop a sound, long-term investment strategy. Clients can choose from 5,000 mutual funds, including self-directed, tax-deferred Individual Retirement Accounts (IRAs). We also offer products to fund plans for companies of all sizes, and plans ranging from SIMPLE IRAs to full-service defined contribution and defined benefit plans.</p>"
+    },
+    {
+      "title": "Other Products",
+      "content": "<p>We have established relationships with other carriers and can supply you with information on individual disability<sup>**</sup> income insurance as well as individual and group health insurance products. If we don't offer it, chances are we can assist you.</p>"
+    }
+  ]
+}
+---
+
+  <p>Our agents are trained professionals who can help clients identify their financial needs and then determine which financial and insurance products can best help them meet their objectives. Some of the products we often use to serve the needs of our clients include:</p>
+<div data-expander=".pam-section-sec" data-expander-title="h2">
+{{ range $i, $s := .page.services }}
+  <div class="pam-section-sec">
+    <h2>{{ $s.title }}</h2>
+    {{ $s.content }}
+    {{ range $s, $sub := $s.sub }}
+      <div data-expander=".pam-sub-section" data-expander-title="h3">
+        <div class="pam-sub-section">
+          <h3>{{ $sub.title }}</h3>
+          {{ $sub.content }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}
+
+<div data-expander=".pam-section" data-expander-title="h2">
+  {{ range $i, $s := .page.products }}
+    <div class="pam-section">
+      <h2>{{ $s.title }}</h2>
+      {{ $s.content }}
+    </div>
+  {{ end }}
+</div>
+
+<p class="pam-footnote"><sup>~</sup>Offered by properly licensed registered representatives of NYLIFE Securities LLC (member FINRA/SIPC), a Licensed Insurance Agency and a New York Life company. </p>
+<p class="pam-footnote"><sup>#</sup>Guarantees are backed by the claims-paying ability of the issuer</p>
+<p class="pam-footnote"><sup>**</sup>Products available through one or more carriers not affiliated with New York Life; dependent on carrier authorization and product availability in your state or locality.</p>

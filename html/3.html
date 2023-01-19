@@ -1,0 +1,48 @@
+---
+{
+  "title": "Individual/Family Services",
+  "services": [
+    {
+      "title": "Wealth Management",
+      "content": "<p>Our Eagle Strategies financial advisors work with clients to design and implement a variety of accumulation and retirement strategies, offering insurance products, investment programs ranging from separately managed portfolios of stocks and bonds to mutual funds, and access to third-party wealth management programs. Our financial advisors offer a consistent process to ensure management of investment assets according to the client’s risk tolerance and investment goals.</p>"
+    },
+    {
+      "title": "Estate Planning<sup>+</sup>",
+      "content": "<p>A well-engineered estate conservation plan can help minimize tax liability and ensure that loved ones are protected. Our agents work with their clients’ advisors to assess the impact of state and federal taxes on their estate and suggest strategies to help minimize those taxes while meeting their family’s needs.</p><p class=\"pam-footnote\"><sup>+</sup>Please seek tax advice from your own tax advisors.</p>"
+    },
+    {
+      "title": "Asset Protection",
+      "content": "<p>There are numerous financial and retirement strategies that can help clients accumulate assets for the future, help shield a business and personal assets from liabilities, and safeguard asset transfer to children and grandchildren. Our agents can help clients figure out what the right course of action is for their specific situation and objectives.</p>"
+    },
+    {
+      "title": "Charitable Planning<sup>+</sup>",
+      "content": "<p>Charitable planning allows clients to support the organizations and causes that matter to them, while often providing immediate income streams and reducing their tax burden. Numerous charitable giving strategies exist, and our agents can help their clients design and execute a charitable giving strategy that is in alignment with their personal and philanthropic goals.</p><p class=\"pam-footnote\"><sup>+</sup>Please seek tax advice from your own tax advisors.</p>"
+    },
+    {
+      "title": "Investment Management",
+      "content": "<p>Managing clients’ wealth requires a clear understanding of each client’s overall investment objectives. Through Eagle Strategies LLC, a wholly owned subsidiary of New York Life, our comprehensive investment advisory capabilities utilize an investment approach that looks beyond traditional asset allocation, while addressing important factors such as risk tolerance levels and investment time horizons.</p>"
+    },
+    {
+      "title": "Financial Planning<sup>*</sup>",
+      "content": "<p>Our financial advisors with Eagle Strategies LLC provide personalized financial planning to their clients that is specific to their situation, including their income, financial situation and goals, risk tolerance, values, and family. They work with each client to identify and prioritize their goals, explore options, establish effective strategies, construct and execute a plan, and assess the performance of the plan and adjust the plan as needed.</p>"
+    },
+    {
+      "title": "401(k) and IRA Rollovers<sup>+</sup>",
+      "content": "<p>When clients leave a job or retire, they have a decision to make regarding their 401(k) money. While leaving those assets in the former employer’s plan is an option, a rollover can be a consideration. Working with their tax advisor, our NYLIFE Securities Registered Representatives can help their clients determine the right course of action for them. This may include: leaving the funds in their existing plan, if permitted, or rolling them over into their new employer’s plan, if one is available and rollovers are permitted. Each choice offers advantages and disadvantages, depending on the client’s specific needs and retirement plan, such as the desired investment options and services, applicable fees, expenses, and withdrawal options, as well as required minimum distributions and tax treatment of applicable options.</p>"
+    }
+  ]
+}
+---
+<div class="pam-section">
+  <p>Taking into account each client’s needs, goals, and tolerance to risk, our agents work with their clients to help bring clarity to where they are going and how to get there. Some products and services are highlighted below.</p>
+</div>
+<div data-expander=".pam-section" data-expander-title="h2">
+  {{ range $i, $s := .page.services }}
+    <div class="pam-section">
+      <h2>{{ $s.title }}</h2>
+      {{ $s.content }}
+    </div>
+  {{ end }}
+</div>
+<p class="pam-footnote"><sup>*</sup>Offered by qualified financial advisors through Eagle Strategies LLC, a Registered Investment Adviser.  Eagle Strategies is a New York Life company.</p>
+<p class="pam-footnote"><sup>+</sup>Neither New York Life Insurance Company nor its agents offer tax, legal, or accounting advice.</p>

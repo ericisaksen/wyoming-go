@@ -1,0 +1,21 @@
+---
+{
+  "title": "Our Professionals"
+}
+---
+<div class="pam-section">
+  <div class="pam-flex partners-container">
+    {{ range $i, $t := .site.partners }}
+      <div class="pam-medium-3 pam-columns valign-top" data-ani="fadeInUp">
+        <a href="{{ $t.page }}" class="overlay-link"></a>
+        <div class="partners-ind">
+          <img src="{{ if $t.headshot }}{{ file $t.headshot }}{{ else }}http://placehold.it/250x300{{ end }}" alt="Photo of {{ $t.name }}">
+          <div class="partners-meta">
+            <h2 class="partners-name">{{ $t.name }}{{ if $t.designations }}, {{ $t.designations }}{{ end }}</h2>
+            <p class="partners-positon">{{ if $t.position }}{{ $t.position }}{{ end }}</p>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</div>

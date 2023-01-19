@@ -1,0 +1,34 @@
+/*!
+ *
+ * Copyright (c) 2020 Grayhorse Enterprises, LLC
+ * All Rights Reserved.
+ *
+ * Created by Lawton Marketing Group
+ * Interested in our work? Visit us at:
+ *
+ * http://lawtonmg.com
+ *
+ */
+
+// CSS imports
+@import url('//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+@import url('//primeagentmarketing.s3-us-west-2.amazonaws.com/library/fontawesome/5.10.2/all.min.css');
+
+@import url("https://use.typekit.net/slj7pyd.css");
+
+// Local settings
+$font-family-sans-serif: 'effra', sans-serif;
+$font-family-serif: 'alda', sans-serif;
+
+$primary: #007ac2;
+$secondary: #303030;
+
+// Bourbon mixins
+@import "bourbon/bourbon";
+// Framework library
+@import "framework/framework";
+
+// Include layout styles
+@import "layout";
+// Include content styles
+@import "content";

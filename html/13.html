@@ -1,0 +1,33 @@
+---
+{
+  "title": "Contact"
+}
+---
+
+<div class="pam-section" style="border-bottom: 0;" id="mainoffice">
+  <div class="pam-flex">
+    <div class="pam-large-4 pam-medium-6 pam-columns address-container">
+      <div>
+        <i class="lmg-fas lmg-fa-map-marker-alt"><label>.</label></i>
+        <h2>Main Office</h2>
+        <p>{{ .site.address.address_line_1 }}<br/>
+          {{ if .site.address.address_line_2 }}{{ .site.address.address_line_2 }} <br/>{{ end }}
+          {{ .site.address.city }}, {{ .site.address.state}} {{ .site.address.zip }}</p>
+      </div>
+    </div>
+
+    <div class="pam-large-4 pam-medium-6 pam-columns address-container">
+      <div>
+        <i class="lmg-fas lmg-fa-comments"><label>.</label></i>
+        <h2>Let's Talk</h2>
+        <p>Call Us: <a href="tel:{{ .site.phone }}">{{ .site.phone }}</a><br/>
+          Fax: {{ .site.fax }}</p>
+      </div>
+    </div>
+    <div class="pam-large-12 pam-columns">
+      <div class="pam-map-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11700.59827702467!2d-106.3257258!3d42.8485749!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x193cfbea5a8185f5!2sNew%20York%20Life%20Insurance!5e0!3m2!1sen!2sus!4v1674130536626!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</div>

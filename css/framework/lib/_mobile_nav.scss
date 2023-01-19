@@ -1,0 +1,131 @@
+$mobile-navigation-icon-bg: #fff !default;
+$mobile-navigation-icon-fg: black !default;
+$mobile-navigation-width: 350px !default;
+$mobile-navigation-font: $font-family-sans-serif !default;
+$mobile-navigation-font-size: 18px !default;
+$mobile-navigation-fg: #444 !default;
+$mobile-navigation-bg: #efefef !default;
+$mobile-navigation-active-fg: $mobile-navigation-bg !default;
+$mobile-navigation-active-bg: $mobile-navigation-fg !default;
+$mobile-navigation-side: left !default;
+$mobile-navigation-width-small: 100% !default;
+body {
+  #{$mobile-navigation-side}: 0;
+  position: relative;
+  top: 100px;
+  @media #{$large-up}{
+    top: 0;
+  }
+}
+
+.pam-mobile-nav-toggle{
+  background: #fff file-url('NYL-logo-color.png') no-repeat right 20px center / auto 60%;
+  color: $primary;
+  cursor: pointer;
+  #{$mobile-navigation-side}: 0;
+  line-height: 1.0em;
+  padding: 0.5em 0.75em;
+  position: fixed;
+  top: 0;
+  z-index: 1003;
+  width: 100%;
+  font-size: 2em;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+      box-shadow: 0 2px 10px #999;
+}
+
+.pam-mobile-nav {
+  bottom: 0;
+  #{$mobile-navigation-side}: -1 * $mobile-navigation-width-small;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: $mobile-navigation-width-small;
+  z-index: 1100;
+  background: $mobile-navigation-bg;
+  @media #{$medium-only}{
+    #{$mobile-navigation-side}: -1 * $mobile-navigation-width;
+    width: $mobile-navigation-width;
+  }
+  &, a {
+    color: $mobile-navigation-fg;
+  }
+  a {
+    display: block;
+    font-family: $mobile-navigation-font;
+    font-size: $mobile-navigation-font-size;
+    line-height: 1.2em;
+    padding: 1em;
+    text-decoration: none;
+  }
+  a.pam-mobile-nav-close {
+    background-color: $primary;
+    color: white;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul ul {
+    background: lighten($mobile-navigation-bg, 5%);
+  }
+  > ul > li {
+    > a {
+      position: relative;
+      cursor: pointer;
+    }
+    > a:after {
+      @extend .pam-icon;
+      display: block;
+      position: absolute;
+      top: 0.40em;
+      right: 8px;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      transition: all 0.5s ease;
+      height: 1em;
+      width: 1em;
+      font-size: 2em;
+      line-height: 1em;
+      content: "\f105";
+    }
+    &.active > a {
+      background: darken($mobile-navigation-bg, 5%);
+    }
+    &.active > a:after {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+    > .pam-mobile-nav-close:after,
+    > a[href]:after {
+      content: none !important;
+    }
+  }
+}
+
+html.pam-mobile-nav-active {
+  overflow-x: hidden;
+  .pam-mobile-nav {
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,.15);
+    #{$mobile-navigation-side}: 0;
+  }
+}
+
+.pam-mobile-nav, .pam-mobile-nav-toggle, body {
+  transition: #{$mobile-navigation-side} 0.4s;
+}
+
+@media #{$large-up} {
+  .pam-mobile-nav-toggle,
+  .pam-mobile-nav {
+    display: none;
+  }
+  html.pam-mobile-nav-active body {
+    #{$mobile-navigation-side}: 0;
+  }
+}
