@@ -9,6 +9,14 @@
           {{ end }}
         </ul>
       {{ end }}
+      <div class="bio-contact">
+        {{ if $b.phone }}
+          <p>Call: <a href="tel:{{ $b.phone }}">{{ $b.phone }}</a></p>
+        {{ end }}
+        {{ if $b.email }}
+          <p><a href="email:{{ $b.email }}">{{ $b.email }}</a></p>
+        {{ end }}
+      </div>
     </div>
     <div class="pam-medium-9 pam-columns">
     <h2 class="partners-name">{{ $b.name }}</h2>
